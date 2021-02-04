@@ -15,7 +15,7 @@ def view_samples(epoch, samples, nrows, ncols, figsize=(5,5)):
         ax.axis('off')
         img = (img + 1.0)/2.0
         img = img*255.0
-        ax.set_adjustable('box-forced')
+        ax.set_adjustable('box')
         im = ax.imshow(img, aspect='equal')
    
     plt.subplots_adjust(wspace=0, hspace=0)
